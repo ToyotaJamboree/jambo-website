@@ -43,7 +43,30 @@ const meta = {
     </Fragment>
   </Hero>
 
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: 'FGHDI6RAJZ',
+      apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
+      siteId: 'e025f50e-6368-45d1-bc3a-849a484415fd',
+      branch: 'main',
+      selector: 'div#search',
+    });
+  </script>
+
+
+
+
+
+
   <!-- Note Widget ******************* -->
+
+
 
   <Note />
 
