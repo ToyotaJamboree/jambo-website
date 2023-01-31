@@ -20,7 +20,7 @@ const meta = {
 };
 ---
 
-<Layout {meta}>
+<Layout {meta} >
   <!-- Hero Widget ******************* -->
 
   <Hero
@@ -29,15 +29,15 @@ const meta = {
     image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden lg:inline">create your website <br />with</span>
+      17th Annual <span class="hidden lg:inline">Toyota Jamboree <br />with</span>
       <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
         <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0 +
-        Tailwind CSS.</span
-      >
+        Tailwind CSS.</span>
+
       <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
       Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
     </Fragment>
@@ -51,47 +51,47 @@ const meta = {
 
   <Features
     highlight="Features"
-    title="What you get with AstroWind"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    title="An event only the state of Texas could contain"
+    subtitle="The Toyota Jamboboree has something for everyone. Create your own experience "
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'A Toyota Takeover',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-          icon: 'tabler:brand-tailwind',
+            'The Park is ours! We wanted to give Toyotas enough room to play, so the entire park is closed to the public for this event. Come mingle with like-minded Toyota and Off-Road Lovers.',
+          icon: 'simple-icons:toyota',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'Family Friendly',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-          icon: 'tabler:components',
+            'Bring the entire family! Well behaved dogs on leashes are welcome and as always kids under 12 get in for Free! We even have special kid events, raffle and a bounce house.',
+          icon: 'carbon:pedestrian-family',
         },
         {
-          title: 'Best Practices',
+          title: 'Trails for Everyone',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:list-check',
+            'With 1850 acres of pure trail delight ranging from the crazy extreme to the beginner mild, there is a trail and fun adventure awaiting all.',
+          icon: 'la:map-signs',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'Support BMRA',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+            'Part of the proceeds of this event go to support BMRA and TMTC, the leading "grass roots authority" for establishing and managing off-road parks for motorized usage.',
           icon: 'tabler:rocket',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'Vendor Trade Show',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:arrows-right-left',
+            'Featuring vendors and businesses from all over the country, setup to show and sell all the latest in Toyota, overlanding and adventure gear.  ',
+          icon: 'fluent:tent-48-regular',
         },
         {
-          title: 'Open to new ideas and contributions',
+          title: 'Learn something new',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-          icon: 'tabler:bulb',
+            'Prepare for your next trail ride or adventure with classes and sessions to expand your knowledge in offroading',
+          icon: 'healthicons:i-training-class-outline',
         },
       ],
     ]}
