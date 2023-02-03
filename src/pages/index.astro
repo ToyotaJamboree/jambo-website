@@ -13,6 +13,9 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import { Picture } from '@astrojs/image/components';
+
+
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -66,8 +69,16 @@ const meta = {
 
   <!-- Note Widget ******************* -->
 
-asdf
 
+  <Picture
+  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+  width={500}
+  height={500}
+  widths={[400, 768]}
+  sizes="(max-width: 768px) 100vw, 432px"
+  aspectRatio="500:500"
+  src={import('~/assets/images/SCA_2333.jpg')}
+  />
   <Note />
 
   <!-- Features Widget *************** -->
@@ -121,6 +132,8 @@ asdf
   />
 
   <!-- Content Widget **************** -->
+
+
 
   <Content
     highlight="Inside template"
