@@ -23,9 +23,16 @@ const meta = {
 };
 ---
 
+
+
+
 <Layout {meta} >
   <!-- Hero Widget ******************* -->
+<div id="test">
+  <p>test</p>
 
+  <button class="btn btn-test">Button Test</button>
+</div>
   <Hero
     callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
     callToAction2={{ text: 'Learn more', href: '#features' }}
@@ -46,10 +53,6 @@ const meta = {
     </Fragment>
   </Hero>
 
-
-
-
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
   <script type="text/javascript">
@@ -64,12 +67,14 @@ const meta = {
 
 
 
-<div id="search"></div>
+
+
+<!-- <div id="search"></div> -->
 
 
   <!-- Note Widget ******************* -->
 
-
+<!-- 
   <Picture
   class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
   width={500}
@@ -78,8 +83,14 @@ const meta = {
   sizes="(max-width: 768px) 100vw, 432px"
   aspectRatio="500:500"
   src={import('~/assets/images/SCA_2333.jpg')}
-  />
+  alt="picture testing"
+  /> -->
+
+  
   <Note />
+
+
+
 
   <!-- Features Widget *************** -->
 

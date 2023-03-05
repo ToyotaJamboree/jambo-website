@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset } from '../utils/permalinks';
 
 export const headerData = {
   links: [
@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: 'The Event',
-          href: getPermalink('/landing/saas'),
+          href: getPermalink('/about/trails'),
         },
         {
           text: 'The Park',
@@ -24,37 +24,26 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: 'Events',
       links: [
         {
-          text: 'Features',
+          text: '2023 Toyota Jamboree',
           href: '#',
         },
         {
-          text: 'Pricing Registration',
+          text: 'Yearbook - Past events',
           href: '#',
-        },
-        {
-          text: 'About us',
-          href: '#',
-        },
-        {
-          text: 'Contact',
-          href: '#',
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+        }
+
       ],
     },
-    {
-      text: 'Widgets',
+     {
+      text: 'FAQ',
       href: '#',
+    },
+    {
+      text: 'Help & Support',
+      href: getPermalink('/help'),
     },
     {
       text: 'Blog',
